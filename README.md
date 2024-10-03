@@ -1,6 +1,6 @@
 # Project Title: **Account Management System API**
 
-This is a simple **Account Management System API** built using **NestJS**, **KnexJS ORM**, and **MongoDB**. The system allows users to create an account, fund their account, transfer funds to other users, and withdraw funds.
+This is a simple **Account Management System API** built using **NestJS**, **ORM**, and **MongoDB**. The system allows users to create an account, fund their account, transfer funds to other users, and withdraw funds.
 
 ## Table of Contents
 
@@ -13,15 +13,29 @@ This is a simple **Account Management System API** built using **NestJS**, **Kne
 
 ## Installation
 
-1. Clone the repository:
+Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   ```
+```bash
+git clone https://github.com/Drbenzene/sage-backend.git
+```
 
-   ```bash
-   cd your-repo-name
-   ```
+Install packages
+
+```bash
+npm install
+```
+
+Run build
+
+```bash
+npm run build
+```
+
+Start the Production App
+
+```bash
+npm run start:prod
+```
 
 # Server configuration
 
@@ -29,16 +43,4 @@ PORT=3000
 
 # Database configuration
 
-DB_HOST=your-mongo-host
-DB_PORT=your-mongo-port
-DB_NAME=your-mongo-db-name
-DB_USER=your-db-username
-DB_PASS=your-db-password
-
-# Knex configuration
-
-KNEX_CLIENT=mongodb
-
-# Authentication (for mock tokens)
-
-FAUX_AUTH_TOKEN=your-fake-token
+Check the .env example
