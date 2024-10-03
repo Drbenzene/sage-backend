@@ -37,6 +37,12 @@ Start the Production App
 npm run start:prod
 ```
 
+## API Endpoints
+
+```bash
+http://localhost:PORT/api-docs
+```
+
 # Server configuration
 
 PORT=3000

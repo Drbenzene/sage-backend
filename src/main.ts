@@ -9,12 +9,13 @@ async function bootstrap() {
     .setTitle('Sage Backend Assessment')
     .setDescription('API Documentation for Sage Backend Assessment API')
     .setVersion('1.0')
+    .addServer('https://sage-backend-1v58.onrender.com/', 'Live environment')
     .addServer('http://localhost:3000/', 'Local environment')
     .addTag('Sage Backend Assessment')
     .addBearerAuth()
     .build();
 
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create(AppModule, { cors: true });
   app.useGlobalPipes(new ValidationPipe());
   app.use(cookieParser());
 
